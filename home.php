@@ -10,7 +10,7 @@
 				<input class="button" type = "submit" name = "submit" value = "Log out" />
 			</form>
 			</div>
-			<h2>Welcome putka maina </h2>
+			<h2>Welcome</h2>
 			
 			<a>You are logged in as:</a><br>
 			<?php
