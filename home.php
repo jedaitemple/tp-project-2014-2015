@@ -10,7 +10,7 @@
 				<input class="button" type = "submit" name = "submit" value = "Log out" />
 			</form>
 			</div>
-			<h2>Welcome putka maina </h2>
+			<h2>Welcome </h2>
 			
 			<a>You are logged in as:</a><br>
 			<?php
@@ -19,6 +19,7 @@
 				echo $_SESSION['uname'] ;
 			?>
 			<br>
+			<!-- da napravim buton za iztrivane na login -->
 			<a style="color:white;font-size:30px;" href = "logsaverform.php">Save new login</a>
 			<a style="color:white;font-size:30px;" href = "userregs.php">Show my logins</a>
 		

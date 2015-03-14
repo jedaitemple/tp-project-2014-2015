@@ -47,17 +47,19 @@ $form = <<<EOT
 		</head>
 		
 		<body>
-		
+		<form action = "login.php" align= "right" >
+			<input class="button" style ="width:100px; font-size: 17px;;" type = "submit" name = "submit" value = "Login" />
+		</form>
 		<div id="form">
 			<form align = "center" action = "register.php" method = "POST">
-		
-				First Name: <input type = "text" name = "name" required/><br>
-				Last Name: <input type = "text" name = "lname" required/><br>
-				Username: <input style = "margin-left:10px;"  type = "text" name = "uname" required/><br>
-				Email: <input style = "margin-left:60px;" type = "email" name = "email" required/><br>
-				Password: <input style = "margin-left:15px;"  type = "password" name = "pass1" required/><br>
-				Confirm Password: <input style = "margin-right:93px;"  type = "password" name = "pass2" required/><br><br>
-				<input type = "submit" value = "Register" name = "submit" />
+				<img src = "images/logo.png" style="margin-left:200px;"/><br>
+				<input type = "text" style = "border: 1px solid black;width:154px;height:40px;margin-right:5px;" placeholder = "First Name" name = "name" required/>
+				<input type = "text" style = "margin-top:2px;border: 1px solid black;width:154px;height:40px;" placeholder ="Last Name" name = "lname" required/><br>
+				<input placeholder = "Username" style = "margin-top:5px;border: 1px solid black;width:317px;height:40px;" type = "text" name = "uname" required/><br>
+				<input placeholder = "Email" style = "margin-top:5px;border: 1px solid black;width:317px;height:40px;" type = "email" name = "email" required/><br>
+				<input placeholder = "Password" style = "margin-top:5px;border: 1px solid black;width:317px;height:40px;" type = "password" name = "pass1" required/><br>
+				<input placeholder = "Confirm Password" style = "margin-top:5px;border: 1px solid black;width:317px;height:40px;" type = "password" name = "pass2" required/><br><br>
+				<input class = "button" type = "submit" value = "Register" name = "submit" />
 			</form>	
 		</div>
 		

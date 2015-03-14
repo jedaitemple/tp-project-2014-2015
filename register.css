@@ -5,6 +5,7 @@ min-width:770px;
 color:white;
 }
 
+/* prozra4na kutiq
 div#form {
 	font-size:30px;
 	margin-top:20%;
@@ -16,3 +17,26 @@ div#form {
     filter: alpha(opacity=60); /
 	
 } 
+
+*/
+
+.button {
+background:linear-gradient(to top, black,#009ACD); 
+border: 2px solid black;
+font-weight: bold;
+color:white;
+text-decoration:none;
+font-size: 23px;
+border-radius:5px;
+width:317px;
+padding:5px;
+ font-family: Comic Sans MS;
+}
+
+.button:hover {
+background:linear-gradient(to bottom,black ,#009ACD ); 
+border: 2px solid black;
+color:white;
+cursor: pointer;
+}
+

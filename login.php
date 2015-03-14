@@ -68,10 +68,10 @@ $form = <<<EOT
 		<div id="form" align="center">
 			<img src = "images/logo.png" style="margin-left:200px;"/>
 			<form action = "login.php" method = "POST">
-			Username: <input type = "text" style = "border: 1px solid blue;width:250px;height:40px;" name = "uname" /><br>
-			Password: <input type = "password" style = "border: 1px solid blue;margin-left:3.5px;width:250px;height:40px;" name = "pass" /><br><br>
+				<input type = "text" placeholder = "Username"style = "border: 1px solid blue;width:250px;height:40px;" name = "uname" /><br>
+				<input type = "password" placeholder = "Password" style = "margin-top:5px;border: 1px solid blue;width:250px;height:40px;" name = "pass" /><br><br>
 			
-			<input class="button" type = "submit" style = "margin-left:75px;" name = "submit" value = "Log in" />
+			<input class="button" type = "submit" name = "submit" value = "Log in" />
 		</form>
 		</div>
 
