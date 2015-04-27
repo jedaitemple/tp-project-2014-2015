@@ -1,6 +1,6 @@
 <?php
 	//tova 6te e na4alnata stranica
-	//da dobavime forgot password? -link za vuzstanovqvane na parolata...
+	//da dobavq "forgot password?"
 	require('config.php');
 	
 if(isset($_POST['submit'])){

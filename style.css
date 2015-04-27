@@ -10,16 +10,18 @@ margin-top:20%;
 }
 
 .button {
+display:inline;
+position:relative;
+float:right; 
 background:linear-gradient(to top, black,#009ACD); 
 border: 2px solid black;
-font-weight: bold;
 color:white;
 text-decoration:none;
 font-size: 17px;
 border-radius:5px;
 width:100px;
-padding:5px;
- font-family: Comic Sans MS;
+padding:2px;
+font-family: Comic Sans MS;
 }
 
 .button:hover {
@@ -28,3 +30,65 @@ border: 2px solid black;
 color:white;
 cursor: pointer;
 }
+
+/* MENU */
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  position: relative;
+  display: block;
+  font-size: 20px;
+  background: #000000;
+  opacity:0.8;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid skyblue;
+}
+#menu ul:before {
+  content: '';
+  display: block;
+}
+#menu ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#menu li {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0 4px;
+}
+#menu li a {
+  display: block;
+  float: left;
+  color: #999999;
+  text-decoration: none;
+  padding: 9px 20px 7px 20px;
+  border-bottom: 3px solid transparent;
+}
+#menu li a:hover {
+  color: #FFFFFF;
+  border-bottom: 3px solid skyblue /*#00b8fd;*/ ; 
+}
+#menu li.active a {
+  display: inline;
+  border-bottom: 3px solid blue /*#00b8fd;*/ ; 
+  float: left;
+  margin: 0;
+}
+
+/* MENU */
+/*
+#line{
+height:50px;
+width:100%;
+border-radius:5px;
+position:relative;
+border:solid black 2px;
+opacity: 0.6;
+background-color:black;
+}
+*/

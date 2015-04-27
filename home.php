@@ -5,23 +5,33 @@
 	</head>
 	
 	<body>
-		<div align="right">
-			<form action = "login.php" align= "right" >
-				<input class="button" type = "submit" name = "submit" value = "Log out" />
-			</form>
-			</div>
-			<h2>Welcome </h2>
+		
+			<div id="menu">
 			
-			<a>You are logged in as:</a><br>
-			<?php
-				require'config.php';
-				session_start();
-				echo $_SESSION['uname'] ;
-			?>
-			<br>
-			<!-- da napravim buton za iztrivane na login -->
-			<a style="color:white;font-size:30px;" href = "logsaverform.php">Save new login</a>
-			<a style="color:white;font-size:30px;" href = "userregs.php">Show my logins</a>
+				<div style = "float:right; position:relative; z-index:1;">
+					<form action = "login.php"  >
+						<input style = "margin:5px;"class="button" type = "submit" name = "submit" value = "Log out" />
+						<?php
+						require'config.php';
+						session_start();
+						$user =  $_SESSION['uname'];
+						echo $user;
+					?>
+					</form>
+				</div>
+			
+				<ul>
+					<li class='active'><a href='home.php'><span>Home</span></a></li>
+					<li><a href='logsaverform.php'><span>Save new login</span></a></li>
+					<li><span><a href="userregs.php">Show my logins</a></li>
+					<li><a href='#'><span>Payment</span></a></li>
+					<li><a href='#'><span>About</span></a></li>
+				</ul>
+				
+				
+			</div>
+
+	
 		
 	</body>
 </html>

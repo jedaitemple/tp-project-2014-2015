@@ -5,34 +5,46 @@
 	</head>
 	
 	<body>
-		<div align="right">
-			<form action = "login.php" align= "right" >
-				<input class="button" type = "submit" name = "submit" value = "Log out" />
-			</form>
+	<div id="menu">
+			
+				<div style = "float:right; position:relative; z-index:1;">
+					<form action = "login.php"  >
+						<input style = "margin:5px;"class="button" type = "submit" name = "submit" value = "Log out" />
+						<?php
+						require'config.php';
+						session_start();
+						$loggedacc =  $_SESSION['uname'];
+						echo $loggedacc;
+					?>
+					</form>
+				</div>
+			
+				<ul>
+					<li><a href='home.php'><span>Home</span></a></li>
+					<li class='active'><a href='logsaverform.php'><span>Save new login</span></a></li>
+					<li><span><a href="userregs.php">Show my logins</a></li>
+					<li><a href='#'><span>Payment</span></a></li>
+					<li><a href='#'><span>About</span></a></li>
+				</ul>
+				
+				
 			</div>
-			<h2>Welcome</h2>
-			<a style="color:white;font-size:30px;" href = "home.php">Home</a><br>
 			
-			<a>You are logged in as:</a><br>
-			<?php
-				require'config.php';
-				session_start();
-				$loggedacc = $_SESSION['uname'] ;
-				echo $loggedacc;
-			?>
 			<br><br>
-			<form action = "logsaverform.php" method = "POST">
-					URL: <input type = "text" name = "url" required/><br>
-					Username: <input type = "text" name = "username" required/><br>
-					Email: <input type = "email" name = "email" required/><br>
-					Password: <input type = "password" name = "password1" required/><br>
-					Confirm Password: <input type = "password" name = "password2" required/><br>
-					<input type = "submit" value = "Save" name = "submit" />
+			<form action = "logsaverform.php" method = "POST" align = "center">
+					<input type = "text"  style = "border: 1px solid black;width:290px;height:45px;margin-right:5px;margin-bottom:3px;" placeholder = "URL" name = "url" required/><br>
+					<input type = "text"  style = "border: 1px solid black;width:290px;height:45px;margin-right:5px;margin-bottom:3px;" placeholder = "Username" name = "username" required/><br>
+					<input type = "email"  style = "border: 1px solid black;width:290px;height:45px;margin-right:5px;margin-bottom:3px;" placeholder = "Email" name = "email" required/><br>
+					<input type = "password"  style = "border: 1px solid black;width:290px;height:45px;margin-right:5px;margin-bottom:3px;" placeholder = "Password" name = "password1" required/><br>
+					<input type = "password"  style = "border: 1px solid black;width:290px;height:45px;margin-right:5px;" placeholder = "Confirm Password" name = "password2" required/><br><br>
+					<input type = "submit" class="button" style = "width:290px;height:45px;float:center;margin-right:5px;" value = "Save" name = "submit" />
 			</form>
 			
 			<?php
-			//tda se izpolzva md5 za parolite
+				//tda se izpolzva md5 za parolite
+				
 				if(isset($_POST['submit'])){
+				
 					$url = mysql_real_escape_string($_POST['url']);
 					$username = mysql_real_escape_string($_POST['username']);
 					$email = mysql_real_escape_string($_POST['email']);
@@ -44,8 +56,6 @@
 					} else {
 						echo "The passwords do not match";
 					}
-					
-					
 					
 				}
 			?>
