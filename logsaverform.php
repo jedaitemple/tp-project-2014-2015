@@ -50,6 +50,8 @@
 					$email = mysql_real_escape_string($_POST['email']);
 					$password1 = mysql_real_escape_string($_POST['password1']);
 					$password2 = mysql_real_escape_string($_POST['password2']);
+					
+					
 					if($password1 == $password2){
 						mysql_query("INSERT INTO `savedlogins` (`id`, `url`, `username`, `email`, `password`, `loggedacc`) VALUES (NULL, '$url', '$username', '$email','$password1', '$loggedacc')");
 						echo "Your login is saved!";

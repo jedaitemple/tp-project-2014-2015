@@ -18,33 +18,6 @@ if(isset($_POST['submit'])){
 	if(mysql_num_rows($sql) > 0) {
 		if(isset($_POST['uname']) && isset($_POST['pass'])){
 			header('Location:home.php');
-/*
-$form1 = <<<EOT
-<html>
-	<head>
-		<title>Welcome </title>
-		<link rel="stylesheet" type="text/css" href="style.css "><!--CHANGE ME--> 
-	</head>
-	
-	<body>
-		<div align="right">
-				<form action = "login.php">
-					<input type = "submit" value = "Log out">
-				</form>
-			</div>
-			<h2>You are logged as: </h2>
-			<a>$uname</a>
-		
-	</body>
-</html>
-EOT;
-
-
-echo $form1;
-*/
-			//echo"You are logged in as: <br>"
-			//echo $uname;
-			//tuk trqva da iima edna i su6ta stranica za vsi4ki useri no s razli4ni danni za vseki edin (v zavisimost ot usera )exm: header('Location:home.php ');, logout button
 		}
 	}else{
 		header('Location:fail.php ');

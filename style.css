@@ -3,6 +3,9 @@ background-image:url("images/wp.jpg");
 background-size: 100% 100%;
 min-width:770px;
 color:white;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center; 
 }
 #form{
 font-size:30px;
@@ -42,7 +45,7 @@ cursor: pointer;
   display: block;
   font-size: 20px;
   background: #000000;
-  opacity:0.8;
+  background-color:rgba(0,0,0,0.8);
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 1px solid skyblue;
 }
@@ -59,36 +62,85 @@ cursor: pointer;
   display: block;
   float: left;
   margin: 0;
-  padding: 0 4px;
+  padding: 0 3px;
 }
 #menu li a {
   display: block;
   float: left;
-  color: #999999;
+  color: white;
   text-decoration: none;
-  padding: 9px 20px 7px 20px;
-  border-bottom: 3px solid transparent;
+  padding: 11px 20px 8px 20px;
+ 
 }
 #menu li a:hover {
-  color: #FFFFFF;
-  border-bottom: 3px solid skyblue /*#00b8fd;*/ ; 
+  color: black;
+  background:#009ACD; 
 }
 #menu li.active a {
   display: inline;
-  border-bottom: 3px solid blue /*#00b8fd;*/ ; 
+  background:linear-gradient(to bottom,black ,#009ACD ); 
+  color:black;
   float: left;
   margin: 0;
 }
 
 /* MENU */
-/*
-#line{
-height:50px;
-width:100%;
-border-radius:5px;
-position:relative;
-border:solid black 2px;
-opacity: 0.6;
-background-color:black;
+
+/* TABLE */
+
+
+.CSSTableGenerator table{
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:60%;
+	height:10%;
+	margin:0px;
+	padding:0px;
 }
-*/
+
+.CSSTableGenerator tr:nth-child(odd){
+background-color:rgba(30,40,50,0.6);
+ }
+.CSSTableGenerator tr:nth-child(even){
+ background-color:rgba(0,0,0,0.6);
+}
+.CSSTableGenerator td{
+	vertical-align:middle;
+	border:1px solid #000000;
+	border-width:1px 1px 1px 1px;
+	text-align:left;
+	padding:7px;
+	font-size:15px;
+	font-family:Arial;
+	font-weight:normal;
+	color:white;
+}
+.CSSTableGenerator tr:first-child td{
+	background:-o-linear-gradient(bottom, #009ACD 5%, black 100%);
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #009ACD), color-stop(1, black) );
+	background:-moz-linear-gradient( center top, #009ACD 5%, black 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#009ACD", endColorstr="black");
+	background: -o-linear-gradient(top,#009ACD,black);
+
+	background-color:#005fbf;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 1px 0px 1px;
+	font-size:18px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#ffffff;
+}
+/* hover 
+.CSSTableGenerator tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%);
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005fbf), color-stop(1, #003f7f) );
+	background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", endColorstr="#003f7f");
+	background: -o-linear-gradient(top,#005fbf,003f7f);
+	background-color:#005fbf;
+}
+
+hover */
+
+/* TABLE */
