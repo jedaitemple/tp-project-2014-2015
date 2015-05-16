@@ -5,7 +5,6 @@
 	</head>
 	
 	<body>
-
 			<div id="menu">
 			
 				<div style = "float:right; position:relative; z-index:1;">
@@ -21,13 +20,12 @@
 				</div>
 			
 				<ul>
-					<li><a href='home.php'><span>Home</span></a></li>
-					<li><a href='logsaverform.php'><span>Save new login</span></a></li>
-					<li class='active'><span><a href="userregs.php">Show my logins</a></li>
-					<li><a href='#'><span>Payment</span></a></li>
+					<li class='active'><span><a href="userregs.php">My logins</a></li>
+					<li><a href='logsaverform.php'><span>New login</span></a></li>
+					<li><a href='payment.php'><span>Payment</span></a></li>
+					<li><a href='passgen.php'><span>Password Generator</span></a></li>
 					<li><a href='#'><span>About</span></a></li>
 				</ul>
-				
 				
 			</div>
 			<?php
@@ -36,8 +34,9 @@
 				$query = "SELECT * FROM savedlogins"; 
 				$result = mysql_query($query);
 				$count = 0;
-			
-				echo"<div class='CSSTableGenerator' align = 'center' ><table>";
+				
+				echo "<p align = 'center' style = 'font-size:25px;'>$user 's logins</p>";
+				echo"<div class='table' align = 'center' ><table>";
 				echo "<br><tr><td>login #</td><td>URL</td><td>Username</td><td>Email</td><td>Password</td><td>Delete</td></tr>";
 				while($row = mysql_fetch_array($result)){   
 					$username = $row['username'];
@@ -53,7 +52,7 @@
 						echo"
 			  
 							<tr>
-								<td >
+								<td>
 									$count
 								</td>
 								<td>
@@ -69,7 +68,7 @@
 									$pass
 								</td>
 								<td>
-									<form method='POST'><input type = 'submit' style = 'background-color:skyblue;' name = 'delete' value = '$id'/></form>
+									<form method='POST'><input type = 'submit'' id = 'delbutton' name = 'delete' value = '$id'/> </form>
 								</td>
 							</tr> ";
 						

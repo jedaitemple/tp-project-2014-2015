@@ -20,10 +20,10 @@
 				</div>
 			
 				<ul>
-					<li><a href='home.php'><span>Home</span></a></li>
-					<li class='active'><a href='logsaverform.php'><span>Save new login</span></a></li>
-					<li><span><a href="userregs.php">Show my logins</a></li>
-					<li><a href='#'><span>Payment</span></a></li>
+					<li><span><a href="userregs.php">My logins</a></li>
+					<li class='active'><a href='logsaverform.php'><span>New login</span></a></li>
+					<li><a href='payment.php'><span>Payment</span></a></li>
+					<li><a href='passgen.php'><span>Password Generator</span></a></li>
 					<li><a href='#'><span>About</span></a></li>
 				</ul>
 				
@@ -31,6 +31,7 @@
 			</div>
 			
 			<br><br>
+			<p align = "center" style = "font-size:30px;">Save new login</p>
 			<form action = "logsaverform.php" method = "POST" align = "center">
 					<input type = "text"  style = "border: 1px solid black;width:290px;height:45px;margin-right:5px;margin-bottom:3px;" placeholder = "URL" name = "url" required/><br>
 					<input type = "text"  style = "border: 1px solid black;width:290px;height:45px;margin-right:5px;margin-bottom:3px;" placeholder = "Username" name = "username" required/><br>

@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
 	
 	if(mysql_num_rows($sql) > 0) {
 		if(isset($_POST['uname']) && isset($_POST['pass'])){
-			header('Location:home.php');
+			header('Location:userregs.php');
 		}
 	}else{
 		header('Location:fail.php ');
@@ -34,12 +34,17 @@ $form = <<<EOT
 	</head>
 	
 	<body>
-		
+	
 		<form action = "register.php" align= "right" >
 			<input class="button" style ="width:100px; font-size: 17px;;" type = "submit" name = "submit" value = "Sing up" />
 		</form>
+		
+		<div align = "center">
+			<img src = "images/c-l.png" style="width:300px;height:300px;"/>
+			<img src = "images/t-l.png" style=""/>
+			
+		</div>
 		<div id="form" align="center">
-			<img src = "images/logo.png" style="margin-left:200px;"/>
 			<form action = "login.php" method = "POST">
 				<input type = "text" placeholder = "Username"style = "border: 1px solid blue;width:250px;height:40px;" name = "uname" /><br>
 				<input type = "password" placeholder = "Password" style = "margin-top:5px;border: 1px solid blue;width:250px;height:40px;" name = "pass" /><br><br>

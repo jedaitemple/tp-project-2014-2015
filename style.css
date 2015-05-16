@@ -1,8 +1,9 @@
 body{
 background-image:url("images/wp.jpg");
 background-size: 100% 100%;
-min-width:770px;
+min-width:640px;
 color:white;
+display:block;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center; 
@@ -10,6 +11,25 @@ background-position: center;
 #form{
 font-size:30px;
 margin-top:20%;
+}
+
+#delbutton{
+background:url("images/x1.png");
+position:absolute;
+padding:0px;
+margin-left:15px;
+padding-bottom:20px;
+background-repeat:no-repeat;
+border:0px;
+color: transparent;
+width:24px;
+height:24px;
+}
+
+#delbutton:hover{
+cursor:pointer;
+background:url("images/x.png");
+background-repeat:no-repeat;
 }
 
 .button {
@@ -44,7 +64,6 @@ cursor: pointer;
   position: relative;
   display: block;
   font-size: 20px;
-  background: #000000;
   background-color:rgba(0,0,0,0.8);
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 1px solid skyblue;
@@ -62,24 +81,27 @@ cursor: pointer;
   display: block;
   float: left;
   margin: 0;
-  padding: 0 3px;
+  padding: 0 0px;
 }
 #menu li a {
   display: block;
   float: left;
-  color: white;
+  color: rgb(200,200,200) ;
   text-decoration: none;
   padding: 11px 20px 8px 20px;
  
 }
 #menu li a:hover {
-  color: black;
-  background:#009ACD; 
+  /*color: black;*/
+  /* background:linear-gradient(to bottom,black ,#00B5F2 ); */
+  border-bottom:4px solid #00B5F2;
+  color:white;
 }
 #menu li.active a {
+	/* background:linear-gradient(to bottom,black ,#00B5F2); */
+	/* color:black; */
   display: inline;
-  background:linear-gradient(to bottom,black ,#009ACD ); 
-  color:black;
+  border-bottom:4px solid #00B5F2;/
   float: left;
   margin: 0;
 }
@@ -89,22 +111,23 @@ cursor: pointer;
 /* TABLE */
 
 
-.CSSTableGenerator table{
+.table table{
     border-collapse: collapse;
     border-spacing: 0;
 	width:60%;
 	height:10%;
 	margin:0px;
 	padding:0px;
+	text-align:center;
 }
 
-.CSSTableGenerator tr:nth-child(odd){
-background-color:rgba(30,40,50,0.6);
+.table tr:nth-child(odd){
+background-color:rgba(70,80,90,0.6);
  }
-.CSSTableGenerator tr:nth-child(even){
- background-color:rgba(0,0,0,0.6);
+.table tr:nth-child(even){
+ background-color:rgba(0,0,0,0.4);
 }
-.CSSTableGenerator td{
+.table td{
 	vertical-align:middle;
 	border:1px solid #000000;
 	border-width:1px 1px 1px 1px;
@@ -115,24 +138,19 @@ background-color:rgba(30,40,50,0.6);
 	font-weight:normal;
 	color:white;
 }
-.CSSTableGenerator tr:first-child td{
-	background:-o-linear-gradient(bottom, #009ACD 5%, black 100%);
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #009ACD), color-stop(1, black) );
-	background:-moz-linear-gradient( center top, #009ACD 5%, black 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#009ACD", endColorstr="black");
-	background: -o-linear-gradient(top,#009ACD,black);
-
-	background-color:#005fbf;
+.table tr:first-child td{
+	background-color:#0A7396;
 	border:0px solid #000000;
 	text-align:center;
 	border-width:0px 1px 0px 1px;
 	font-size:18px;
+	padding:6px;
 	font-family:Arial;
 	font-weight:normal;
 	color:#ffffff;
 }
 /* hover 
-.CSSTableGenerator tr:first-child:hover td{
+.table tr:first-child:hover td{
 	background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%);
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005fbf), color-stop(1, #003f7f) );
 	background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );
@@ -144,3 +162,23 @@ background-color:rgba(30,40,50,0.6);
 hover */
 
 /* TABLE */
+
+/* PASSWORD GENERATOR */
+#passgen{
+	color:white;
+	font-size:25px;
+	margin: 2px 2px;
+	width: 30%;
+	height: 20%;
+	min-width: 500px;
+	min-height: 440px;
+	margin-top:10%;
+	margin-left: 35%;
+    margin-right: auto;
+	background-color: #000000;
+	border-radius: 5px;
+	border: 1px solid skyblue;
+	background-color:rgba(0,0,0,0.43);
+	
+}
+/* PASSWORD GENERATOR */
