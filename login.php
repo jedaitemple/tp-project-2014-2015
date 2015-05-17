@@ -41,8 +41,7 @@ $form = <<<EOT
 		
 		<div align = "center">
 			<img src = "images/c-l.png" style="width:300px;height:300px;"/>
-			<img src = "images/t-l.png" style=""/>
-			
+			<img src = "images/t-l.png"/>	
 		</div>
 		<div id="form" align="center">
 			<form action = "login.php" method = "POST">

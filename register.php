@@ -50,9 +50,12 @@ $form = <<<EOT
 		<form action = "login.php" align= "right" >
 			<input class="button" style ="width:100px; font-size: 17px;;" type = "submit" name = "submit" value = "Login" />
 		</form>
+		<div align = "center">
+			<img src = "images/c-l.png" style="width:300px;height:300px;"/>
+			<img src = "images/t-l.png"/>	
+		</div><br>
 		<div id="form">
 			<form align = "center" action = "register.php" method = "POST">
-				<img src = "images/logo.png" style="margin-left:200px;"/><br>
 				<input type = "text" style = "border: 1px solid black;width:154px;height:40px;margin-right:5px;" placeholder = "First Name" name = "name" required/>
 				<input type = "text" style = "margin-top:2px;border: 1px solid black;width:154px;height:40px;" placeholder ="Last Name" name = "lname" required/><br>
 				<input placeholder = "Username" style = "margin-top:5px;border: 1px solid black;width:317px;height:40px;" type = "text" name = "uname" required/><br>

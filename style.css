@@ -56,7 +56,9 @@ cursor: pointer;
 }
 
 /* MENU */
-
+#menu{
+	min-width:1050px;
+}
 #menu ul {
   margin: 0;
   padding: 0;
@@ -119,6 +121,7 @@ cursor: pointer;
 	height:10%;
 	margin:0px;
 	padding:0px;
+	min-width:1050px;
 	text-align:center;
 }
 
@@ -174,7 +177,7 @@ hover */
 	min-width: 650px;
 	min-height: 440px;
 	margin-top:10%;
-	margin-left: 35%;
+	margin-left: auto;
     margin-right: auto;
 	background-color: #000000;
 	border-radius: 5px;
