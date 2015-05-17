@@ -57,7 +57,7 @@ cursor: pointer;
 
 /* MENU */
 #menu{
-	min-width:1050px;
+	min-width:1110px;
 }
 #menu ul {
   margin: 0;
@@ -121,7 +121,7 @@ cursor: pointer;
 	height:10%;
 	margin:0px;
 	padding:0px;
-	min-width:1050px;
+	min-width:1110px;
 	text-align:center;
 }
 
