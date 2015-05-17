@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Welcome </title>
+		<title>LoginSaver - About</title>
 		<link rel="stylesheet" type="text/css" href="style.css "><!--CHANGE ME--> 
 	</head>
 	
@@ -28,7 +28,7 @@
 					</div></li>
 					<li style= "margin-left:220px;"><span><a href="userregs.php">My logins</a></li>
 					<li><a href='logsaverform.php'><span>New login</span></a></li>
-					<li><a href='passgen.php'><span>Password Generator</span></a></li>
+					<li><a href='passgen.php'><span>Password generator</span></a></li>
 					<li class='active'><a href='about.php'><span>About</span></a></li>
 				</ul>
 				

@@ -41,7 +41,7 @@ if(isset($_POST['submit'])){
 $form = <<<EOT
 <html>
 		<head>
-			<title>Registration</title>
+			<title>LoginSaver - Registration</title>
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 			<link rel="stylesheet" type="text/css" href="register.css">
 		</head>
