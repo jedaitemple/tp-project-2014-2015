@@ -12,8 +12,8 @@
 						<?php
 						require'config.php';
 						session_start();
-						$user =  $_SESSION['uname'];
-						echo "<p style = 'position:relative;float:left;margin-top:14px;margin-right:10px;'>$user</p>";
+						$loggedacc =  $_SESSION['uname'];
+						echo "<p style = 'position:relative;float:left;margin-top:14px;margin-right:10px;'>$loggedacc</p>";
 						?>
 						<input style = "margin:5px;"class="button" type = "submit" name = "submit" value = "Log out" />
 					</form>
