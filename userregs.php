@@ -72,7 +72,7 @@
 								<td>
 										<form>
 											<input type = \"password\" id = \"$pass + $count\" readonly = \" readonly \"  value = \"$pass\" style = \"position:relative;height:23px;border:1px solid transparent;border-radius:3px;\">
-											<input type = \"checkbox\" onchange=\"document.getElementById('$pass + $count').type = this.checked ? 'text' : 'password'\" style = \";position:relative;\"><a style = \"position:absolute;\">Show password</a>
+											<input type = \"checkbox\" onchange=\"document.getElementById('$pass + $count').type = this.checked ? 'text' : 'password'\" style = \";position:relative;\"><a style = \"position:relative;\">Show password</a>
 										</form>
 										
 								</td>
