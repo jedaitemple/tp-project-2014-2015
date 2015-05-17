@@ -22,9 +22,8 @@
 				<ul>
 					<li><span><a href="userregs.php">My logins</a></li>
 					<li class='active'><a href='logsaverform.php'><span>New login</span></a></li>
-					<li><a href='payment.php'><span>Payment</span></a></li>
 					<li><a href='passgen.php'><span>Password Generator</span></a></li>
-					<li><a href='#'><span>About</span></a></li>
+					<li><a href='about.php'><span>About</span></a></li>
 				</ul>
 				
 				

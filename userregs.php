@@ -14,7 +14,7 @@
 						require'config.php';
 						session_start();
 						$user =  $_SESSION['uname'];
-						echo $user;
+						echo "<a style = \"position:;padding-top:10px;\">$user</a>";
 					?>
 					</form>
 				</div>
@@ -22,12 +22,12 @@
 				<ul>
 					<li class='active'><span><a href="userregs.php">My logins</a></li>
 					<li><a href='logsaverform.php'><span>New login</span></a></li>
-					<li><a href='payment.php'><span>Payment</span></a></li>
 					<li><a href='passgen.php'><span>Password Generator</span></a></li>
-					<li><a href='#'><span>About</span></a></li>
+					<li><a href='about.php'><span>About</span></a></li>
 				</ul>
 				
 			</div>
+			
 			<?php
 				require'config.php';
 				
@@ -50,7 +50,7 @@
 						//echo "<form method='POST'><input type = 'submit' style = 'background-color:blue;' name = 'delete' value = '$id'/></form>";
 						
 						echo"
-			  
+						
 							<tr>
 								<td>
 									$count
@@ -65,7 +65,11 @@
 									$email
 								</td>
 								<td>
-									$pass
+										<form>
+											<input type = \"password\" id = \"$pass + $count\" readonly = \" readonly \"  value = \"$pass\" style = \"position:relative;height:23px;border:1px solid transparent;border-radius:3px;\">
+											<input type = \"checkbox\" onchange=\"document.getElementById('$pass + $count').type = this.checked ? 'text' : 'password'\" style = \";position:relative;\"><a style = \"position:absolute;\">Show password</a>
+										</form>
+										
 								</td>
 								<td>
 									<form method='POST'><input type = 'submit'' id = 'delbutton' name = 'delete' value = '$id'/> </form>

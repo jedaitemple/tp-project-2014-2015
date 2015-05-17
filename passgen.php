@@ -23,9 +23,8 @@
 				<ul>
 					<li><span><a href="userregs.php">My logins</a></li>
 					<li><a href='logsaverform.php'><span>New login</span></a></li>
-					<li><a href='payment.php'><span>Payment</span></a></li>
 					<li class='active'><a href='passgen.php'><span>Password Generator</span></a></li>
-					<li><a href='#'><span>About</span></a></li>
+					<li><a href='about.php'><span>About</span></a></li>
 				</ul>
 				
 				
@@ -76,33 +75,29 @@
 			<div id ='passgen' align = 'center'>
 				<p>Select Characters:</p>
 				<form method = 'POST'>
-					<table style = "border:1px solid skyblue;">
+					<table style = "border-bottom:1px solid skyblue;border-top:1px solid skyblue;">
 						<tr>
-							<td align = "right" style = "margin-left:100px;border:1px solid skyblue;">
-								<input type = 'checkbox' name = 'alpha' /><a style = "font-size:20px;">Lowercase (a-z)</a><br>
-								<input type = 'checkbox' name = 'alpha_upper'/><a style = "font-size:20px;">Lowercase (A-Z)</a><br>
-								<input type = 'checkbox' name = 'numeric' /><a style = "font-size:20px;">Numbers (0-9)</a><br>
-								<input type = 'checkbox' name = 'special' /><a style = "font-size:20px;">Special Characters(.-+=_,!@$#*%<>[]{})</a><br>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<a style = "font-size:20px;">Password length</a>
-								<input type = 'number' name = 'length'  style =  "width:45px;"/><br>
-							</td>
-							<td>
-								<input type = 'submit' name = 'gen' value = 'Generate' class ='button' style="margin-right:100px;"/><br>
+							<td align = "left" style = "margin-left:100px;">
+								<input type = 'checkbox' name = 'alpha' /><a style = "font-size:30px;">Lowercase (a-z)</a><br>
+								<input type = 'checkbox' name = 'alpha_upper'/><a style = "font-size:30px;">Uppercase (A-Z)</a><br>
+								<input type = 'checkbox' name = 'numeric' /><a style = "font-size:30px;">Numbers (0-9)</a><br>
+								<input type = 'checkbox' name = 'special' style = ""/><a style = "font-size:30px;">Special Characters(.-+=_,!@$#*%<>[]{})</a><br>
+								<a style = "font-size:30px;">Password length</a>
+								<input type = 'number' name = 'length' min = "0" max = "35" style =  "width:45px;height:27px;margin-left:5px;margin-bottom:3px;"/><br>
 							</td>
 						</tr>
 							</table>
-					
-					
-					
 					<p>Your password:</p>
-					<?php echo $pw; ?>
+					<?php echo $pw; ?><br><br>
+					
+					<input type = 'submit' name = 'gen' value = 'Generate' class = 'button' style = 'position:static;margin-right:275px;' />
+						
 				</form>
+				
 					
 			</div>
+			
+			
 			
 
 	
