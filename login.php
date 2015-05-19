@@ -50,6 +50,8 @@ $form = <<<EOT
 			
 			<input class="button" type = "submit" name = "submit" value = "Log in" />
 		</form>
+		
+		<a href = "about_loggedout.php" style = "color:white">More info</a>
 		</div>
 
 
