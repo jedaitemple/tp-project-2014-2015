@@ -6,7 +6,7 @@
 	
 	<body>
 			
-			<div align = "center">
+			<div align = "center" style = "color:white;">
 				<img src = "images/c-l.png" style="width:200px;height:200px;"/>
 				<img src = "images/t-l.png"/><br><br>
 				<h1>Login Saver helps you  save your registrations in case that you forget them!</h1>
