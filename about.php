@@ -39,10 +39,10 @@
 				<img src = "images/c-l.png" style="width:200px;height:200px;"/>
 				<img src = "images/t-l.png"/><br><br>
 				<h1>Login Saver helps you  save your registrations in case that you forget them!</h1>
-				<h3>Stop thinking or trying to remember your passwords!</h3>
+				<h3>Stop worrying about your passwords!</h3>
 				
-				<h3>Login Saver is the best way to save your mail,facebook and wifi passwords.</h3>
-				<h3>Just make free account and join  us.</h3>
+				<h3>Login Saver is the best way to save your mail, facebook and wifi passwords.</h3>
+				<h3>Just make a free account and join  us!</h3>
 			
 				<h3>The owners of the website are Martin Grigorov and Konstantin Kostov<h3><br><br>
 				<h3>Contacts:<h3>
