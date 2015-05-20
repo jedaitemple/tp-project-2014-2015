@@ -59,11 +59,14 @@
 			}else{
 				// default [a-zA-Z0-9]{9}
 				$chars = $alpha . $alpha_upper . $numeric;
-				$length = 0;
+				$length = 9;
 			}
  
 			$len = strlen($chars);
 			$pw = '';
+			 if($length>50){
+				
+			 }
 			 
 			for ($i=0;$i<$length;$i++)
 					$pw .= substr($chars, rand(0, $len-1), 1);
@@ -79,12 +82,12 @@
 					<table style = "border-bottom:1px solid skyblue;border-top:1px solid skyblue;">
 						<tr>
 							<td align = "left" style = "margin-left:100px;">
-								<input type = 'checkbox' name = 'alpha' checked/><a style = "font-size:25px;">Lowercase (a-z)</a><br>
-								<input type = 'checkbox' name = 'alpha_upper'checked/><a style = "font-size:25px;">Uppercase (A-Z)</a><br>
-								<input type = 'checkbox' name = 'numeric' checked/><a style = "font-size:25px;">Numbers (0-9)</a><br>
-								<input type = 'checkbox' name = 'special' style = "" /><a style = "font-size:25px;">Special Characters(.-+=_,!@$#*%<>[]{})</a><br>
+								<input type = 'checkbox' name = 'alpha' /><a style = "font-size:25px;">Lowercase (a-z)</a><br>
+								<input type = 'checkbox' name = 'alpha_upper'/><a style = "font-size:25px;">Uppercase (A-Z)</a><br>
+								<input type = 'checkbox' name = 'numeric' /><a style = "font-size:25px;">Numbers (0-9)</a><br>
+								<input type = 'checkbox' name = 'special' style = ""/><a style = "font-size:25px;">Special Characters(.-+=_,!@$#*%<>[]{})</a><br>
 								<a style = "font-size:25px;">Password length</a>
-								<input type = 'text' name = 'length'  min = "0" max = "35" style =  "width:45px;height:27px;margin-left:5px;margin-bottom:3px;"/><br>
+								<input type = 'number' name = 'length' min = "0" max = "35" style =  "width:45px;height:27px;margin-left:5px;margin-bottom:3px;"/><br>
 							</td>
 						</tr>
 							</table>
