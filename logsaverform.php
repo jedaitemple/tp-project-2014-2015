@@ -41,7 +41,7 @@
 					<input type = "email"  style = "border: 1px solid black;width:290px;height:45px;margin-right:5px;margin-bottom:3px;" placeholder = "Email" name = "email" required/><br>
 					<input type = "password"  style = "border: 1px solid black;width:290px;height:45px;margin-right:5px;margin-bottom:3px;" placeholder = "Password" name = "password1" required/><br>
 					<input type = "password"  style = "border: 1px solid black;width:290px;height:45px;margin-right:5px;" placeholder = "Confirm Password" name = "password2" required/><br><br>
-					<input type = "submit" class="button" style = "width:290px;height:45px;float:center;margin-right:5px;" value = "Save" name = "submit" />
+					<input type = "submit" class="lbutton" style = "width:290px;height:45px;float:center;margin-right:5px;" value = "Save" name = "submit" />
 			</form>
 			
 			<?php
